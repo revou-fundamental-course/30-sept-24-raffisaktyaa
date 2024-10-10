@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+        
+        <div class="input-group">
+            <p><label for="celsius">Celsius (°C):</label></p>
+            <input type="number" id="celsius" placeholder="Masukkan Celsius" />
+        </div>
+        
+        <button onclick="convertToFahrenheit()">Konversi</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="reverseConvert()">Reverse</button><br>
+    
+        <br><br>
+        <div class="input-group">
+            <p><label for="fahrenheit">Fahrenheit (°F):</label></p>
+            <input type="number" id="fahrenheit" placeholder="Fahrenheit" disabled />
+        </div>
+    
+        <div class="input-group">
+            <p><label for="calculation">Cara Kalkulasi:</label></p>
+            <input type="text" id="calculation" placeholder="Cara Kalkulasi" disabled />
+        </div>
+    </div>
+    
+    <div class="explanation">
+        <h2>Cara Konversi Dari Celsius (°C) ke Fahrenheit (°F)</h2>
+        <p>
+            Suhu \( S \) dalam derajat Fahrenheit (°F) sama dengan suhu \( S \) dalam derajat Celsius (°C) kali 9/5 tambah 32.
+        </p>
+        <p>
+            \( S_{(°F)} = (S_{(°C)} \times 9/5) + 32 \)
+        </p>
+        <p>
+            atau
+        </p>
+        <p>
+            \( S_{(°F)} = (S_{(°C)} \times 1.8) + 32 \)
+        </p>
+    </div>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
